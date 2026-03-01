@@ -1,0 +1,37 @@
+{
+    "name": "chrome-workspace-manager",
+    "version": "0.1.0",
+    "description": "Tab workspace management for Chrome extensions — save, restore, switch, import/export named workspaces for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "workspace",
+        "tabs",
+        "save",
+        "restore",
+        "switch",
+        "manifest-v3",
+        "browser-extension",
+        "session"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-workspace-manager.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}

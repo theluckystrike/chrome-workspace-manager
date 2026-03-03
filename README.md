@@ -1,13 +1,21 @@
-# chrome-workspace-manager — Named Tab Workspaces
-> **Built by [Zovo](https://zovo.one)** | `npm i chrome-workspace-manager`
+# chrome-workspace-manager
 
-Save, restore, rename, delete, export/import named tab workspaces with persistence.
+Manage workspaces in Chrome extensions.
 
-```typescript
-import { WorkspaceManager } from 'chrome-workspace-manager';
-const wm = new WorkspaceManager();
-await wm.save('Research');
-await wm.restore('Research', true); // opens in new window
-const json = await wm.exportWorkspace('Research');
+## Installation
+
+```bash
+npm install chrome-workspace-manager
 ```
-MIT License
+
+## Usage
+
+```javascript
+import { WorkspaceManager } from 'chrome-workspace-manager';
+
+const workspaces = await WorkspaceManager.list();
+```
+
+## License
+
+MIT
